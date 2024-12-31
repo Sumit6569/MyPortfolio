@@ -71,9 +71,18 @@
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+ 
  
 }
+
+  .project-card{
+    margin-bottom: 4rem;
+  }
+
+
+
+
+
 
 @media (min-width: 768px) {
   .projects-grid {
@@ -81,9 +90,7 @@
     
     
   }
-  .project-card{
-    gap: 50rem;
-  }
+
 }
 
 @media (min-width: 1024px) {
@@ -128,6 +135,7 @@
 .project-title {
   font-size: 1.5rem;
   color: white;
+  margin-bottom: 1rem;
 }
 
 .details-button {
@@ -137,6 +145,7 @@
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 
 .details-button:hover {

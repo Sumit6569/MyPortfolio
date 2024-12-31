@@ -32,37 +32,37 @@ const Education = () => {
           {/* Diploma */}
           <div className="qualification-card diploma">
             <div className="qualification-header">
-              <h3 className="qualification-title">Diploma in CSE</h3>
-              <p className="qualification-date">2021 - 2025</p>
+              <h3 className="qualification-title">B.Tech in CSE</h3>
+              <p className="qualification-date">2023 - 2027</p>
             </div>
             <p className="qualification-description">
-              I am currently studying in Informatics Engineering (4th Semester)
-              at Sekolah Tinggi Teknologi Informatika Sony Sugema, Karawang,
-              Jawa Barat, Indonesia
+              I am currently studying in Computer Science and Engineering (4th
+              Semester) at Jodhpur Institure of Engineering and  Technology 
+              Jodhpur, Rajsthan,India
             </p>
           </div>
 
           {/* React Developer */}
           <div className="qualification-card react-developer">
             <div className="qualification-header">
-              <h3 className="qualification-title">React Developer</h3>
+              <h3 className="qualification-title">Senior Secondery</h3>
               <p className="qualification-date">2023</p>
             </div>
             <p className="qualification-description">
               I have successfully completed the{" "}
-              <b>React Web Developer Expert</b> from Dicoding.
+              <b>Class 12th At Gaya College </b> with 83% (PCM)
             </p>
           </div>
 
           {/* SSC */}
           <div className="qualification-card ssc">
             <div className="qualification-header">
-              <h3 className="qualification-title">SSC</h3>
-              <p className="qualification-date">2018 - 2021</p>
+              <h3 className="qualification-title"> Senior Secondery School</h3>
+              <p className="qualification-date">2021</p>
             </div>
             <p className="qualification-description">
               I have passed the Senior Secondary Certificate (SSC) with the
-              highest result <b>GPA - 88</b>
+              highest result <b> 83% </b>
             </p>
           </div>
         </div>

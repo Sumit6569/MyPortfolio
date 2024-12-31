@@ -52,6 +52,7 @@
   max-width: 300px; /* Max width for desktop */
   transition: box-shadow 0.3s ease; /* duration-300 */
   cursor: pointer; /* cursor-pointer */
+  margin-bottom: 4rem; /* mb-8 */
   
 }
 
