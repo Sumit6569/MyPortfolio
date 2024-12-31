@@ -1,0 +1,169 @@
+.project-container {
+  padding: 2rem;
+}
+
+.parent {
+  padding: 2rem 0;
+}
+
+.heading-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.subheading {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #FF651C; 
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 2px solid #FF651C;
+  color: #FF651C;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 9px;
+}
+
+
+.bottomline {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+.filter-button:hover {
+  background-color: #959CA7;
+  color: #fff;
+}
+
+.filter-button.active {
+  background-color: #FF651C;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+ 
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+  }
+  .project-card{
+    gap: 50rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-item {
+  position: relative;
+}
+
+.project-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.details-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #FF651C;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #FF651C;
+}
+
+.see-all-container {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.see-all-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  border: none;
+  background-color: transparent;
+  color: #FF651C;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.see-all-button:hover {
+  color: #FF651C;
+  
+}
+.see-all-button .span{
+    text-decoration: none;
+}

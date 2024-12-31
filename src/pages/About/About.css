@@ -1,0 +1,117 @@
+/* General Container */
+.about-container {
+  padding: 4rem 2rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+
+.about-header {
+  margin-bottom: 2.5rem;
+}
+
+/* Titles */
+.section-title {
+  text-align: center;
+  color: #333;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlighted-text {
+  color: #ff651c;
+}
+
+/* Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Profile Image */
+.profile-image {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 2rem;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Description */
+.about-description {
+  text-align: left;
+}
+
+.name {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.type-animation {
+  margin-top: 1.5rem;
+}
+
+.type-animation-text {
+  font-size: 1.25rem;
+  color: #ff651c;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #666;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-item {
+  font-size: 1.125rem;
+}
+
+.label {
+  font-weight: bold;
+  color: #ff651c;
+}
+
+/* Resume Button */
+.primary-button {
+  background-color: #ff651c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button span {
+  margin-right: 0.5rem;
+}
+
+.primary-button:hover {
+  background-color: #e0581a;
+}

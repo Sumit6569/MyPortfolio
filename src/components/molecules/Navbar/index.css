@@ -1,0 +1,209 @@
+/* Navbar container */
+.navbar {
+  background-color: #313131; /* Tailwind bg-[#313131] */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tailwind shadow-lg */
+  position: relative;
+  z-index: 50;
+}
+
+/* Navbar header */
+.navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1rem; /* Tailwind px-3 */
+}
+
+/* Navbar Logo */
+.navbar .navbar-logo h1 {
+  font-size: 1.87rem; /* Tailwind text-2xl */
+  color: #ff651c; /* Tailwind text-primary */
+  font-family: "Lobster", cursive; /* Font-family matching Tailwind font-lobster */
+  text-decoration: none;
+}
+
+/* Navbar links */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links li {
+  margin-right: 1rem; /* Tailwind mx-4 */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullet points */
+}
+
+.navbar-logo a {
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar .nav-links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff651c; /* Tailwind hover:text-primary */
+}
+
+/* Navbar button */
+.navbar .primary-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff651c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar .primary-button a {
+  color: inherit;
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar .primary-button:hover {
+  background-color: #e85d1f; /* Slightly darker orange for hover */
+}
+
+/* Mobile drawer styles */
+.drawer-content {
+  background-color: #313131;
+  padding: 1rem;
+}
+
+.drawer-content ul {
+  list-style: none;
+  padding-left: 0;
+  
+}
+
+.drawer-content ul li {
+  margin: 1.5rem 0; /* Margin for each item in the drawer */
+  gap: 5rem;
+}
+
+.drawer-content .close-btn {
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.drawer-content .close-btn:hover {
+  color: #ff651c; /* Tailwind hover:text-primary */
+}
+
+.drawer-content .hamburger-btn {
+  
+  background: none;
+  border: none;
+}
+.nav-links a,
+.drawer-content a {
+  text-decoration: none;
+  color: #fff ;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1024px (lg breakpoint) */
+@media (max-width: 1024px) {
+  .navbar .nav-links {
+    display: none; /* Hide desktop nav links */
+  }
+
+  .hamburger-btn {
+    display: block; /* Show hamburger menu */
+  }
+  .drawer-content {
+    padding: 1rem;
+  }
+  .nav-links a,
+  .drawer-content a {
+    text-decoration: none;
+  }
+   .navbar{
+    height: 4rem;
+  }
+}
+
+/* For screens smaller than 768px (md breakpoint) */
+@media (max-width: 768px) {
+  .navbar .navbar-logo h1 {
+    font-size: 1.5rem; /* Reduce logo size */
+  }
+
+  .drawer-content {
+    background-color: #313131;
+    padding: 1rem;
+    color: #fff;
+  }
+  .navbar-header {
+    padding: 0 0.5rem; /* Reduce header padding */
+  }
+
+  .drawer-content ul li {
+    margin: 1rem 0; /* Adjust drawer item spacing */
+  }
+
+  .primary-button {
+    font-size: 0.875rem; /* Reduce button size */
+    padding: 0.5rem; /* Adjust padding */
+  }
+  .nav-links a,
+  .drawer-content a {
+    text-decoration: none;
+  }
+   .navbar{
+    height: 4rem;
+  }
+}
+
+/* For screens smaller than 480px (sm breakpoint) */
+@media (max-width: 480px) {
+  .navbar .navbar-logo h1 {
+    font-size: 1.45rem; /* Further reduce logo size */
+    margin-top: 1rem;
+  }
+  .navbar{
+    height: 4rem;
+  }
+
+  .drawer-content {
+    background-color: #333; /* Change to any color you prefer */
+    color: white; /* Ensure the text is visible */
+    
+  }
+  .nav-links a,
+  .drawer-content a {
+    text-decoration: none;
+  }
+
+  .primary-button {
+    font-size: 0.75rem; /* Smaller button size */
+    padding: 0.25rem 0.5rem; /* Adjust padding for mobile */
+  }
+
+  .drawer-content ul li {
+    margin: 0.75rem 0; /* Compact drawer item spacing */
+    text-decoration: none;
+    color: white;
+  }
+
+.hamburger-btn button {
+  font-size: 1.28rem; /* Adjust the size */
+  color: #fff; /* Set the color for better visibility */
+  background: none; /* Ensure the background is transparent */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Make the cursor a pointer to indicate clickability */
+  margin-top: 1rem;
+}
+
+
+}

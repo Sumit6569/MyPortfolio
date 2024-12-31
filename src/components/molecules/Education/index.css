@@ -1,0 +1,92 @@
+.education-container {
+  padding-top: 6rem; /* pt-24 */
+}
+
+.education-header {
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.education-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 600; /* font-semibold */
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* drop-shadow-md */
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* grid-cols-1 */
+  gap: 2rem; /* gap-8 */
+}
+
+@media (min-width: 1024px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
+  }
+}
+
+.lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottie-animation {
+  margin: 0 auto; /* mx-auto */
+  max-width: 100%; /* Ensures the Lottie animation scales */
+}
+
+.qualification-container {
+  margin: 0 auto; /* mx-auto */
+  gap: 5rem;
+}
+
+.qualification-card {
+  padding: 1.5rem; /* p-6 */
+  background-color: rgba(49, 49, 49, 0.9); /* bg-[#313131] bg-opacity-90 */
+  backdrop-filter: blur(10px); /* backdrop-blur-lg */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  display: inline-block;
+  width: 100%; /* Full width for mobile */
+  max-width: 300px; /* Max width for desktop */
+  transition: box-shadow 0.3s ease; /* duration-300 */
+  cursor: pointer; /* cursor-pointer */
+  
+}
+
+@media (min-width: 748px) {
+  .qualification-card {
+    width: 100%; /* Full width for mobile */
+    max-width: 320px; /* Max width for desktop */
+    
+  }
+}
+
+.qualification-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* hover:shadow-primary */
+}
+
+.qualification-header {
+  text-align: right; /* text-right */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.qualification-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  color: var(--primary-color); /* text-primary */
+}
+
+.qualification-date {
+  font-size: 0.875rem; /* text-sm */
+  color: var(--neutral-color); /* text-neutral */
+  font-weight: 600; /* font-semibold */
+}
+
+.qualification-description {
+  font-size: 0.875rem; /* text-sm */
+  color: var(--neutral-color); /* text-neutral */
+  text-align: justify; /* text-justify */
+}
+

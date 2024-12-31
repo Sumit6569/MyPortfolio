@@ -1,0 +1,144 @@
+/* General Container Styling */
+.contact-container {
+  padding-top: 96px;
+  margin: 0 auto;
+  max-width: 1200px; /* Keeps layout centered */
+  overflow: hidden;
+}
+
+/* Grid for Contact Content */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 32px;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Larger Screen Layout */
+@media (min-width: 1200px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr; /* Two-column layout for large screens */
+    gap: 48px;
+  }
+}
+
+/* Input Fields (Same Across All Screen Sizes) */
+.input-field {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 9px 2px #141414;
+  margin: 16px 0;
+  width: 100%;
+  background-color: #212121;
+  color: gray;
+}
+
+.input-field::placeholder {
+  color: gray;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px #FF651C;
+}
+
+/* Primary Button (Same Across All Screen Sizes) */
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background-color: #FF651C;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #e0581a;
+  box-shadow: 0 0 10px #FF651C;
+}
+
+.primary-button span {
+  margin-left: 8px;
+}
+
+/* Heading Styling (Consistent Across Screen Sizes) */
+.heading-small {
+  text-align: center;
+}
+
+.heading-large {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.social-icons h3 {
+  font-size: 1.25rem;
+  color: #CCCCCC;
+  margin-right: 16px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #CCCCCC;
+  margin-left: 12px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FF651C;
+  transform: translateY(-4px);
+}
+
+/* Contact Info Styling */
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Spacing between info items */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.contact-info h3 {
+  font-weight: 500;
+  color: #FF651C;
+}
+
+.contact-info h3 svg {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* No Overrides for Inputs and Headings on Smaller Screens */
+
+/* Optional: Fine-tune layout for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 24px; /* Adjust padding for smaller screens */
+  }
+  .heading-large {
+    font-size: 2.5rem; /* Slightly smaller headings on small screens */
+  }
+}

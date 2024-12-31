@@ -1,0 +1,144 @@
+/* Banner Container */
+.banner-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem; /* Padding for smaller screens */
+  margin-left: 0; /* Adjust margin for smaller screens */
+  
+}
+.banner-container a {
+  text-decoration: none; /* Removes underline */
+}
+
+
+
+
+/* For Larger Screens (Desktop) */
+@media (min-width: 1024px) {
+  .banner-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 150px;
+  }
+}
+
+/* Heading Styles */
+.banner-container h2 {
+  font-size: 1.25rem;
+  color: #959ca7; /* Neutral color */
+  font-weight: 500;
+}
+
+.banner-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Animation Text */
+.banner-container .animation-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff651c; /* Primary color */
+}
+
+/* Paragraph Text */
+.banner-container p {
+  color: #959ca7; /* Neutral color */
+  max-width: 36rem; /* Limit text width */
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center; /* Center-align for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .banner-container p {
+    text-align: left; /* Left-align for medium and larger screens */
+  }
+}
+
+/* Button Container */
+.banner-container .btn-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons on smaller screens */
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .banner-container .btn-container {
+    flex-direction: row; /* Row layout for medium and larger screens */
+    align-items: center;
+  }
+}
+
+/* Primary Button */
+.banner-container .primary-button {
+  background-color: #ff651c;
+  padding: 0.8rem 1rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner-container .primary-button:hover {
+  background-color: #e55a1b;
+}
+
+/* Secondary Button */
+.banner-container .secondary-button {
+  padding: 0.8rem 1rem;
+  border-radius: 0.375rem;
+  background-color: #2d2d2d;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner-container .secondary-button:hover {
+  background-color: #555;
+}
+
+/* Animation Section (Lottie) */
+.banner-container .w-full {
+  max-width: 90%;
+  margin: 2rem 0; /* Adjust margins for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .banner-container .w-full {
+    max-width: 50%; /* Adjust width for larger screens */
+    margin: 0;
+  }
+}
+
+/* For Extra Small Screens (Max-width: 480px) */
+@media (max-width: 480px) {
+  .banner-container h1 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .banner-container .animation-text {
+    font-size: 1.25rem; /* Smaller text for animation */
+  }
+
+  .banner-container p {
+    font-size: 0.875rem; /* Smaller paragraph font size */
+  }
+
+  .banner-container .primary-button,
+  .banner-container .secondary-button {
+    font-size: 0.875rem; /* Adjust button font size */
+    padding: 0.6rem 0.8rem; /* Adjust button padding */
+  }
+ 
+
+}
