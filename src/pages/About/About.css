@@ -41,20 +41,39 @@
 
 /* Profile Image */
 .profile-image {
-  width: 17rem;
-  height: 17rem;
+  width: 21rem;
+  height: 21rem;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 2rem;
+  margin-right: 3rem;
+  border: 4px solid transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #ff651c, #fca311, #ffd700);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
 }
 
 .profile-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08) rotateZ(1deg);
+  filter: brightness(1.1);
+  animation: glowPulse 1.5s infinite;
 }
 
+/* Glowing Pulse Animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 15px #ff651c, 0 0 30px #fca311;
+  }
+  50% {
+    box-shadow: 0 0 25px #ffd700, 0 0 45px #ff651c;
+  }
+  100% {
+    box-shadow: 0 0 15px #ff651c, 0 0 30px #fca311;
+  }
+}
 /* Description */
 .about-description {
   text-align: left;

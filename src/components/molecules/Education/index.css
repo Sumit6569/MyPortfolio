@@ -1,27 +1,33 @@
 .education-container {
-  padding-top: 6rem; /* pt-24 */
+  padding-top: 6rem;
 }
 
 .education-header {
-  margin-bottom: 3rem; /* mb-12 */
+  margin-bottom: 3rem;
 }
 
 .education-title {
-  font-size: 2.25rem; /* text-4xl */
-  font-weight: 600; /* font-semibold */
+  font-size: 2.25rem;
+  font-weight: 600;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* drop-shadow-md */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-primary {
+  background: linear-gradient(90deg, #ff651c, #ff9330);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr; /* grid-cols-1 */
-  gap: 2rem; /* gap-8 */
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 @media (min-width: 1024px) {
   .education-grid {
-    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -32,62 +38,86 @@
 }
 
 .lottie-animation {
-  margin: 0 auto; /* mx-auto */
-  max-width: 100%; /* Ensures the Lottie animation scales */
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .qualification-container {
-  margin: 0 auto; /* mx-auto */
-  gap: 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .qualification-card {
-  padding: 1.5rem; /* p-6 */
-  background-color: rgba(49, 49, 49, 0.9); /* bg-[#313131] bg-opacity-90 */
-  backdrop-filter: blur(10px); /* backdrop-blur-lg */
-  border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  display: inline-block;
-  width: 100%; /* Full width for mobile */
-  max-width: 300px; /* Max width for desktop */
-  transition: box-shadow 0.3s ease; /* duration-300 */
-  cursor: pointer; /* cursor-pointer */
-  margin-bottom: 4rem; /* mb-8 */
-  
+  padding: 1.5rem;
+  background: rgba(49, 49, 49, 0.6);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 340px;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (min-width: 748px) {
-  .qualification-card {
-    width: 100%; /* Full width for mobile */
-    max-width: 320px; /* Max width for desktop */
-    
-  }
+.qualification-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 101, 28, 0.1), transparent 60%);
+  transform: rotate(45deg);
+  z-index: 0;
 }
 
 .qualification-card:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* hover:shadow-primary */
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 36px rgba(255, 101, 28, 0.25);
+}
+
+.qualification-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(255, 101, 28, 0.3);
+  z-index: 0;
+}
+
+.qualification-header,
+.qualification-description {
+  position: relative;
+  z-index: 1;
 }
 
 .qualification-header {
-  text-align: right; /* text-right */
-  margin-bottom: 1rem; /* mb-4 */
+  text-align: right;
+  margin-bottom: 1rem;
 }
 
 .qualification-title {
-  font-size: 1.5rem; /* text-2xl */
-  font-weight: 600; /* font-semibold */
-  color: var(--primary-color); /* text-primary */
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff651c, #ff9330);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .qualification-date {
-  font-size: 0.875rem; /* text-sm */
-  color: var(--neutral-color); /* text-neutral */
-  font-weight: 600; /* font-semibold */
+  font-size: 0.875rem;
+  color: #aaa;
+  font-weight: 600;
 }
 
 .qualification-description {
-  font-size: 0.875rem; /* text-sm */
-  color: var(--neutral-color); /* text-neutral */
-  text-align: justify; /* text-justify */
+  font-size: 0.875rem;
+  color: #ddd;
+  text-align: justify;
 }
-

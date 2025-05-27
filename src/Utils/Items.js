@@ -1,15 +1,92 @@
 const Items = [
   {
     id: 1,
+    mainImage: "/Crowdfunding1.png",
+    img: [
+      "/Crowdfunding1.png",
+      "/Crowdfunding2.png",
+      "/Crowdfunding3.png",
+      "/Crowdfunding4.png",
+    ],
+    features: [
+      "User can create fundraising campaigns",
+      "Secure donation through PayPal payment method",
+      "Track donation progress",
+      "Admin can manage campaigns",
+      "Responsive design",
+      "Search campaigns by category or goal",
+      "User authentication and authorization",
+      "Real-time updates on campaign progress",
+      "404 Page and many more.",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux",
+      "TailwindCSS",
+      "PayPal API",
+      "JWT Authentication",
+      "Render Deployment",
+    ],
+    title: "Crowdfunding Application",
+    description:
+      "A full-stack crowdfunding platform where users can create campaigns for fundraising and accept donations securely through PayPal. The application features real-time updates, user authentication, and a responsive design to ensure a seamless experience for both campaign creators and donors. Built with a modern tech stack and deployed on Render.",
+    category: "business",
+    liveLink: "https://fundrise-nexus-project.vercel.app/",
+    codeLink: "https://github.com/Sumit6569/fundrise-nexus-project",
+  },
+  {
+    id: 2,
+    mainImage: "/EcomF1.png",
+    img: [
+      "/EcomF1.png",
+      "/EcomF2.png",
+      "/EcomF3.png",
+      "/EcomF4.png",
+      "/EcomF5.png",
+    ],
+    features: [
+      "Admin can create products",
+      "Admin can delete products",
+      "Track orders",
+      "Add to cart functionality",
+      "Save orders",
+      "Filter items by price",
+      "Search items",
+      "PayPal payment integration",
+      "Responsive Design",
+      "404 Page and many more.",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux",
+      "TailwindCSS",
+      "PayPal API",
+      "JWT Authentication",
+      "Render Deployment",
+    ],
+    title: "Sumit Ecommerce",
+    description:
+      "Sumit Ecommerce is a modern and user-friendly full-stack eCommerce platform. It features robust functionality for both users and administrators, including product management, order tracking, secure PayPal payments, and advanced search filters. Built with a modern tech stack and deployed on Render, it ensures a seamless shopping experience.",
+    category: "business",
+    liveLink: "https://mernecom-1-frontend.onrender.com/",
+    codeLink: "https://github.com/Sumit6569/MernEcom/tree/main",
+  },
+  
+  {
+    id: 3,
     mainImage: "/Ecom2.png",
     img: ["/Ecom1.png", "/Ecom2.png", "/Ecom3.png", "/Ecom4.png", "/Ecom5.png"],
     features: [
       "Home",
       "About",
-
       "Contact",
       "Product Add",
-
       "A user can order through the Admin for Website services, Mobile Applications, Branding & Creative Content, as well as Internet Marketing & Advertising.",
       "Responsive Design",
       "404 Page and many more.",
@@ -32,7 +109,37 @@ const Items = [
     codeLink: "https://github.com/Sumit6569/Change-Ecom",
   },
   {
-    id: 2,
+    id: 4,
+    mainImage: "/Ecom2.png",
+    img: ["/Ecom1.png", "/Ecom2.png", "/Ecom3.png", "/Ecom4.png", "/Ecom5.png"],
+    features: [
+      "Home",
+      "About",
+      "Contact",
+      "Product Add",
+      "A user can order through the Admin for Website services, Mobile Applications, Branding & Creative Content, as well as Internet Marketing & Advertising.",
+      "Responsive Design",
+      "404 Page and many more.",
+    ],
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "React Roudter",
+      "Redux",
+      "React icons",
+      "Email JS",
+      "Framer Motion",
+      "FakeProduct Api",
+    ],
+    title: "Sumit Ecommerce",
+    description:
+      "Sumit Ecommerce is a modern and user-friendly online shopping platform designed to provide a seamless shopping experience. It features a wide range of products, secure payment options, and an intuitive interface for browsing and purchasing. Whether you're looking for the latest trends or everyday essentials, Sumit Ecommerce ensures a fast, reliable, and enjoyable shopping journey. With advanced search filters and personalized recommendations, it's your one-stop destination for all your shopping needs!",
+    category: "business",
+    liveLink: "https://change-ecom.vercel.app/",
+    codeLink: "https://github.com/Sumit6569/Change-Ecom",
+  },
+  {
+    id: 5,
     mainImage: "/Obeys1.png",
     img: [
       "/Obeys1.png",
@@ -63,7 +170,7 @@ const Items = [
     codeLink: "https://github.com/Sumit6569/ObysAgency",
   },
   {
-    id: 3,
+    id: 6,
     mainImage: "/Java1.png",
     img: ["/Java1.png", "/java2.png", "/java3.png"],
     features: [
@@ -89,7 +196,7 @@ const Items = [
     codeLink: "https://github.com/Sumit6569/JavaAvlTreeVisulaizer",
   },
   {
-    id: 4,
+    id: 7,
     mainImage: "/refocous1.png",
     img: ["/refocous1.png", "/refocous2.png", "/refocous3.png"],
     features: ["Advanced Desing", "HeroSectioni"],
@@ -99,7 +206,6 @@ const Items = [
       "React Icons",
       "React Vite",
       "Redux",
-
       "Tailwind CSS",
       "Apexcharts",
       "Localforage",
@@ -111,7 +217,7 @@ const Items = [
     codeLink: "https://github.com/Sumit6569/Refocous",
   },
   {
-    id: 5,
+    id: 8,
     mainImage: "/Music1.png",
     img: ["/Music1.png", "/Music2.png"],
     features: ["Advanced Desing", "HeroSectioni"],

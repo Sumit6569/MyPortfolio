@@ -89,7 +89,7 @@ const Project = () => {
                 key={item.id}
                 className="project-item"
               >
-                <div className="project-card">
+                <div className="project-card ">
                   <img
                     className="project-image"
                     src={item.mainImage}
@@ -110,10 +110,10 @@ const Project = () => {
         {location.pathname === "/" && (
           <div className="see-all-container">
             <Link to="/project">
-              <button className="see-all-button">
-                <span>See All</span>
+              
+                See All
                 <FiArrowRight />
-              </button>
+              
             </Link>
           </div>
         )}

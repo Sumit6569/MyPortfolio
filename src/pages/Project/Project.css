@@ -77,6 +77,7 @@
 
   .project-card{
     margin-bottom: 4rem;
+    margin-right: 1rem;
   }
 
 
@@ -101,16 +102,24 @@
 
 .project-item {
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 .project-card {
   border-radius: 0.5rem;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 .project-image {
   width: 100%;
   height: auto;
+  
 }
 
 .overlay {
@@ -125,11 +134,13 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transform: translateY(10%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .project-card:hover .overlay {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .project-title {
@@ -144,35 +155,38 @@
   background-color: #FF651C;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
 }
 
 .details-button:hover {
-  background-color: #FF651C;
+  background-color: #e85c1a;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 101, 28, 0.6);
 }
 
 .see-all-container {
-  text-align: right;
+  text-align: left;
   margin-top: 1rem;
 }
 
-.see-all-button {
-  display: flex;
+.see-all-container {
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
-  border: none;
+  font-size: 2.25rem;
+  text-decoration: none;
   background-color: transparent;
   color: #FF651C;
+  border: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.see-all-button:hover {
-  color: #FF651C;
-  
+.see-all-container {
+  color: ;
+  transform: translateX(4px); /* Hover animation: slide */
 }
-.see-all-button .span{
-    text-decoration: none;
-}
+
+
+

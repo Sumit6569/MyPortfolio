@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { BottomLine, MySkill, Education } from "../../components";
 import { FaDownload } from "react-icons/fa";
-import "./About.css"; // Importing the index.css for global styles
+import "./About.css";
 
 const About = () => {
   return (
@@ -26,6 +26,7 @@ const About = () => {
             <BottomLine />
           </div>
         </motion.div>
+
         <div className="about-grid">
           <motion.div
             className="about-image"
@@ -43,6 +44,7 @@ const About = () => {
               title="Sumit Kumar"
             />
           </motion.div>
+
           <motion.div
             className="about-description"
             initial={{ x: 200, opacity: 0 }}
@@ -69,6 +71,7 @@ const About = () => {
                 repeat={Infinity}
               />
             </div>
+
             <p className="description">
               As a MERN stack developer, I am committed to building high-quality
               web applications that meet the needs of my clients. I specialize
@@ -81,6 +84,7 @@ const About = () => {
               solutions drives me to stay up-to-date with the latest
               technologies and trends in the industry.
             </p>
+
             <div className="contact-info">
               <h2 className="contact-item">
                 <span className="label">Name: </span>Sumit Kumar
@@ -96,7 +100,8 @@ const About = () => {
               </h2>
               <a
                 href="https://drive.google.com/file/d/1nKLhR_rYYsjsW9AGi8DPVSzS2lt29ozM/view?usp=sharing"
-                target="blank"
+                target="_blank"
+                rel="noreferrer"
               >
                 <div className="resume-btn-container">
                   <button className="primary-button">

@@ -1,7 +1,8 @@
-import React from "react";
+
 import Lottie from "react-lottie";
 import readingBook from "../../../assets/reading-book.json";
-import "./index.css"; // Make sure to import your CSS file
+import "./index.css"; // Import the enhanced CSS
+import { motion } from "framer-motion";
 
 const Education = () => {
   const defaultOptions = {
@@ -12,6 +13,7 @@ const Education = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
   return (
     <div className="education-container">
       <div className="education-header">
@@ -19,6 +21,7 @@ const Education = () => {
           My <span className="text-primary">Qualification</span>
         </h1>
       </div>
+
       <div className="education-grid">
         <div className="lottie-container">
           <Lottie
@@ -28,43 +31,59 @@ const Education = () => {
             className="lottie-animation"
           />
         </div>
+
         <div className="qualification-container">
-          {/* Diploma */}
-          <div className="qualification-card diploma">
+          {/* B.Tech */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="qualification-card"
+          >
             <div className="qualification-header">
               <h3 className="qualification-title">B.Tech in CSE</h3>
               <p className="qualification-date">2023 - 2027</p>
             </div>
             <p className="qualification-description">
               I am currently studying in Computer Science and Engineering (4th
-              Semester) at Jodhpur Institure of Engineering and  Technology 
-              Jodhpur, Rajsthan,India
+              Semester) at Jodhpur Institute of Engineering and Technology,
+              Jodhpur, Rajasthan, India.
             </p>
-          </div>
+          </motion.div>
 
-          {/* React Developer */}
-          <div className="qualification-card react-developer">
+          {/* Senior Secondary */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="qualification-card"
+          >
             <div className="qualification-header">
-              <h3 className="qualification-title">Senior Secondery</h3>
+              <h3 className="qualification-title">Senior Secondary</h3>
               <p className="qualification-date">2023</p>
             </div>
             <p className="qualification-description">
-              I have successfully completed the{" "}
-              <b>Class 12th At Gaya College </b> with 83% (PCM)
+              I have successfully completed <b>Class 12th at Gaya College</b>{" "}
+              with 83% (PCM).
             </p>
-          </div>
+          </motion.div>
 
           {/* SSC */}
-          <div className="qualification-card ssc">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="qualification-card"
+          >
             <div className="qualification-header">
-              <h3 className="qualification-title"> Senior Secondery School</h3>
+              <h3 className="qualification-title">Senior Secondary School</h3>
               <p className="qualification-date">2021</p>
             </div>
             <p className="qualification-description">
               I have passed the Senior Secondary Certificate (SSC) with the
-              highest result <b> 83% </b>
+              highest result <b>83%</b>.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
